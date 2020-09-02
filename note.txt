@@ -1,0 +1,81 @@
+//Main Functions
+-Item management
+   -Brand/Category/Subcategory/
+-selling/shopping
+-Order Management
+   -items/customer
+   -order/order_detail
+   
+-Customer Manange
+   -reports
+
+Model Relationship
+-------------------
+-one-to-one
+
+   -hasOne(p)
+   -belongsTo(c)
+
+-one-to many  
+     -hasMany(p)
+     -belongTo(c)
+
+-many-to-many
+    -belongsToMany
+    -pivot table      
+
+Homework(using backend template)
+-------------
+-create route for dashboard page(get)
+-create master blade(views/backendtemplate.blade.php)
+-create child blade(views/backend/dashboard.blade.php)
+-create controller BackendController
+   -create method dashboardfun()
+   -call view(backend.dashboard) 
+
+Item (CRUD)
+----------- 
+create-show form ,store data,
+retrieve-display data(all,row)
+update-show form with old value,update data
+delete-  Delete data
+
+
+Authentication
+----------------
+-instaltion
+-nodejs (call npn in terminal)
+-Docs
+-Security/Authentication
+-Commands
+  -composer require laravel/ui
+  -php artisan ui bootstrap --auth
+  -npm install
+-Routes
+  -localhost:8000/login
+  -localhost:8000/register
+
+
+Spatie
+-------
+-composer require
+-public
+-php artisan migrate
+-create new seeder class (RoleTableSeeder)
+-seed this class
+-User model->use HasRole
+-app/HTTp/Controller/Auth/Regisdtercontroller
+ -create method ->assignRole
+ -Register middleware(app/Http/kernal.php routeMiddleware)
+ -routes/web.php
+  -role:Admin
+
+
+GIT
+---
+-git init
+-git add
+-git comitn-m "message"
+-git remote add origin
+-git push -u origin url
+-git pull
